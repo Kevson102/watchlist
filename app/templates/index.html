@@ -10,25 +10,27 @@
 <!-- Content block -->
 {% block content %}
 <!-- Popular movie sections -->
-<div>
-  <h3>Popular Movies</h3>
-  <ul>
-    {{macro.displayMovieList(popular)}}
-  </ul>
-</div>
-
-<!-- Upcoming movies -->
-<div>
-  <h3>Upcoming Movies</h3>
-  <ul>
-    {{macro.displayMovieList(upcoming)}}
-  </ul>
-</div>
-<!-- Now showing Movies -->
-<div>
-  <h3>Now showing</h3>
-  <ul>
-    {{macro.displayMovieList(now_showing)}}
-  </ul>
+<div class="container-fluid text-center">
+  <div class="row">
+    <h3>Popular Movies</h3>
+    <ul>
+      {{macro.displayMovieList(popular)}}
+    </ul>
+  </div>
+  
+  <!-- Upcoming movies -->
+  <div class="row">
+    <h3>Upcoming Movies</h3>
+    <ul>
+      {{macro.displayMovieList(upcoming)}}
+    </ul>
+  </div>
+  <!-- Now showing Movies -->
+  <div class="row">
+    <h3>Now showing</h3>
+    <ul>
+      {{macro.displayMovieList(now_showing)}}
+    </ul>
+  </div>
 </div>
 {% endblock %}
